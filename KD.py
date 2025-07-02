@@ -3,9 +3,13 @@ import torch
 from transformers import T5ForConditionalGeneration, T5Tokenizer
 from datasets import load_from_disk
 import google.generativeai as genai
+from keys import key
+
+# genai.configure(api_key="your_real_api_key_here")
+
 
 # Configure Google AI API (replace with your API key)
-genai.configure(api_key="YOUR_API_KEY")  # Obtain from https://ai.google.dev
+genai.configure(api_key=key)  # Obtain from https://ai.google.dev
 teacher_model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Load T5 model and tokenizer
@@ -27,7 +31,7 @@ def get_teacher_summary(text):
         return ""
 
 # Training loop
-def train_student(data, epochs=3, alpha=0.5, batch_size=4):
+def train_student(data, epochs=10, alpha=0.5, batch_size=3):
     optimizer = torch.optim.Adam(student_model.parameters(), lr=5e-5)
     student_model.train()
     

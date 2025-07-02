@@ -44,7 +44,7 @@ def evaluate_model(data, batch_size=4):
         for target, summary in zip(targets, summaries):
             score = scorer.score(target, summary)
             for key in scores:
-                scores[key] += score[key].f1
+                scores[key] += score[key].fmeasure
             num_examples += 1
     
     # Average scores and times
