@@ -111,11 +111,6 @@ Gemini 1.5 Flash and T5-small use different tokenizers and vocabularies, which c
 - Enhance the web demo with a front-end interface (e.g., HTML/React).
 - Explore advanced optimization techniques (e.g., pruning, dynamic quantization).
 
-## Contributions
-This project is open-source. Feel free to:
-- Fork the repository and submit pull requests.
-- Report issues or suggest improvements via GitHub Issues.
-- Use the model or code for research, citing this repository.
 
 ## License
 MIT License. See `LICENSE` file for details.
