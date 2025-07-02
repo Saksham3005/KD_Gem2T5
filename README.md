@@ -1,4 +1,6 @@
-# KD_Gem2T5# Black-Box Knowledge Distillation: Gemini 1.5 Flash to T5 for Text Summarization
+# KD_Gem2T5 #  
+
+Black-Box Knowledge Distillation: Gemini 1.5 Flash to T5 for Text Summarization
 
 ## Project Overview
 This project implements **black-box knowledge distillation (KD)** to transfer the text summarization capabilities of **Gemini 1.5 Flash** (accessed via Google AI API) into a lightweight **T5-small** model. The task is abstractive text summarization on the **CNN/Daily Mail dataset**, chosen for its well-defined structure and compatibility with both models. The distilled T5-small model is optimized for efficiency (via quantization) and deployed as a web-based demo using FastAPI, making it suitable for resource-constrained environments.
@@ -111,11 +113,6 @@ Gemini 1.5 Flash and T5-small use different tokenizers and vocabularies, which c
 - Enhance the web demo with a front-end interface (e.g., HTML/React).
 - Explore advanced optimization techniques (e.g., pruning, dynamic quantization).
 
-## Contributions
-This project is open-source. Feel free to:
-- Fork the repository and submit pull requests.
-- Report issues or suggest improvements via GitHub Issues.
-- Use the model or code for research, citing this repository.
 
 ## License
 MIT License. See `LICENSE` file for details.
