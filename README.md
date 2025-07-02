@@ -30,7 +30,6 @@ The project addresses the challenge of differing vocabulary sizes between Gemini
 2. **Knowledge Distillation**: Train T5-small to mimic Gemini 1.5 Flash summaries.
 3. **Evaluation**: Measure ROUGE scores, inference time, and model size.
 4. **Optimization**: Apply 8-bit quantization to reduce model size.
-5. **Deployment**: Create a FastAPI web app for summarization.
 
 ## Repository Structure
 The repository contains the following scripts, each corresponding to a project phase:
@@ -39,7 +38,6 @@ The repository contains the following scripts, each corresponding to a project p
 - **`knowledge_distillation.py`**: Queries Gemini 1.5 Flash for summaries and trains T5-small using text-based distillation.
 - **`evaluation.py`**: Evaluates the distilled model on ROUGE metrics and measures efficiency (inference time, model size).
 - **`optimization.py`**: Applies 8-bit quantization to T5-small using ONNX.
-- **`deployment.py`**: Deploys the quantized model as a FastAPI web app.
 
 ## Setup Instructions
 ### Prerequisites
